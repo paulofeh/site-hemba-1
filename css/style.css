@@ -609,6 +609,43 @@ ul {
     }
 }
 
+/* ACCESSIBILITY SECTION */
+.accessibility-section {
+    padding: 3rem 10% 0 10%;
+    /* Top padding, no bottom as logos has top padding */
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.access-title {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--black);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.access-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--black);
+}
+
+.access-qr {
+    width: 120px;
+    height: auto;
+}
+
 /* LOGOS SECTION */
 .logos-section {
     padding: 5rem 10%;
