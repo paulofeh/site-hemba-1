@@ -160,14 +160,16 @@ ul {
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: var(--white);
+        background-color: var(--primary-red);
+        /* Match Header BG */
         min-width: 180px;
-        padding: 1rem 0;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 0.5rem 0;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         opacity: 0;
         visibility: hidden;
         transform: translateY(10px);
         transition: all 0.3s ease;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
     }
 
     .nav-item.has-dropdown:hover .dropdown-menu {
@@ -178,14 +180,21 @@ ul {
 
     .dropdown-menu li a {
         display: block;
-        padding: 0.5rem 1.5rem;
+        padding: 0.75rem 1.5rem;
         font-size: 0.9rem;
-        color: var(--black);
+        /* Slightly smaller than main nav */
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--white);
+        /* White text */
+        transition: background-color 0.3s ease;
     }
 
     .dropdown-menu li a:hover {
-        background-color: rgb(245, 245, 245);
-        color: var(--secondary-ochre);
+        background-color: var(--secondary-ochre);
+        /* Ochre on hover */
+        color: var(--white);
     }
 }
 
