@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hêmba - Núcleo Cosmologia</title>
+    <meta name="description" content="Núcleo Cosmologia - Exposição Hêmba de Edgar Kanaykõ Xakriabá.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Mulish:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <a href="index.html" class="brand-link">
+            <img src="assets/img/logos/Titulo_HEMBA_Preto.png" alt="Hêmba" class="header-logo">
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="desktop-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="apresentacao.html" class="nav-link">Apresentação</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link">Núcleos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="nucleo-cosmologia.html">Cosmologia</a></li>
+                        <li><a href="nucleo-territorio.html">Território</a></li>
+                        <li><a href="nucleo-resistencia.html">Resistência</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="curadoria.html" class="nav-link">Texto Curatorial</a></li>
+                <li class="nav-item"><a href="ficha-tecnica.html" class="nav-link">Ficha Técnica</a></li>
+            </ul>
+        </nav>
+
+        <!-- Burger Menu Button -->
+        <div class="burger-menu" aria-label="Menu Mobile">
+            <span class="burger-bar"></span>
+            <span class="burger-bar"></span>
+            <span class="burger-bar"></span>
+        </div>
+    </header>
+
+    <!-- Mobile Overlay Navigation -->
+    <div class="mobile-overlay">
+        <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="apresentacao.html" class="mobile-nav-link">Apresentação</a></li>
+
+            <!-- Mobile Accordion Item -->
+            <li class="mobile-accordion-item">
+                <div class="accordion-header mobile-nav-link">
+                    Núcleos
+                    <span class="accordion-icon">+</span>
+                </div>
+                <ul class="accordion-content">
+                    <li><a href="nucleo-cosmologia.html" class="mobile-sub-link">Cosmologia</a></li>
+                    <li><a href="nucleo-territorio.html" class="mobile-sub-link">Território</a></li>
+                    <li><a href="nucleo-resistencia.html" class="mobile-sub-link">Resistência</a></li>
+                </ul>
+            </li>
+
+            <li><a href="curadoria.html" class="mobile-nav-link">Texto Curatorial</a></li>
+            <li><a href="ficha-tecnica.html" class="mobile-nav-link">Ficha Técnica</a></li>
+        </ul>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- NUCLEO HERO SECTION -->
+        <section class="nucleo-hero">
+            <div class="nucleo-hero-content">
+                <h1 class="nucleo-title">Cosmologia</h1>
+
+                <!-- Swiper -->
+                <div class="swiper-container-wrapper">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <!-- Art Images (salacosmo_edgar_*) -->
+                            <div class="swiper-slide">
+                                <img src="assets/img/salacosmo_edgar_01_a_1920.webp"
+                                    srcset="assets/img/salacosmo_edgar_01_a_640.webp 640w, assets/img/salacosmo_edgar_01_a_1024.webp 1024w, assets/img/salacosmo_edgar_01_a_1920.webp 1920w"
+                                    alt="Cosmologia Art 1" class="hero-slide-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/salacosmo_edgar_01_b_1920.webp"
+                                    srcset="assets/img/salacosmo_edgar_01_b_640.webp 640w, assets/img/salacosmo_edgar_01_b_1024.webp 1024w, assets/img/salacosmo_edgar_01_b_1920.webp 1920w"
+                                    alt="Cosmologia Art 1b" class="hero-slide-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/salacosmo_edgar_02_a_1920.webp"
+                                    srcset="assets/img/salacosmo_edgar_02_a_640.webp 640w, assets/img/salacosmo_edgar_02_a_1024.webp 1024w, assets/img/salacosmo_edgar_02_a_1920.webp 1920w"
+                                    alt="Cosmologia Art 2" class="hero-slide-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/salacosmo_edgar_02_b_1920.webp"
+                                    srcset="assets/img/salacosmo_edgar_02_b_640.webp 640w, assets/img/salacosmo_edgar_02_b_1024.webp 1024w, assets/img/salacosmo_edgar_02_b_1920.webp 1920w"
+                                    alt="Cosmologia Art 2b" class="hero-slide-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/salacosmo_edgar_03_1920.webp"
+                                    srcset="assets/img/salacosmo_edgar_03_640.webp 640w, assets/img/salacosmo_edgar_03_1024.webp 1024w, assets/img/salacosmo_edgar_03_1920.webp 1920w"
+                                    alt="Cosmologia Art 3" class="hero-slide-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/salacosmo_edgar_03_a_1920.webp"
+                                    srcset="assets/img/salacosmo_edgar_03_a_640.webp 640w, assets/img/salacosmo_edgar_03_a_1024.webp 1024w, assets/img/salacosmo_edgar_03_a_1920.webp 1920w"
+                                    alt="Cosmologia Art 3a" class="hero-slide-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/salacosmo_edgar_03_b_1920.webp"
+                                    srcset="assets/img/salacosmo_edgar_03_b_640.webp 640w, assets/img/salacosmo_edgar_03_b_1024.webp 1024w, assets/img/salacosmo_edgar_03_b_1920.webp 1920w"
+                                    alt="Cosmologia Art 3b" class="hero-slide-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/salacosmo_edgar_05_1920.webp"
+                                    srcset="assets/img/salacosmo_edgar_05_640.webp 640w, assets/img/salacosmo_edgar_05_1024.webp 1024w, assets/img/salacosmo_edgar_05_1920.webp 1920w"
+                                    alt="Cosmologia Art 5" class="hero-slide-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/salacosmo_edgar_08_1920.webp"
+                                    srcset="assets/img/salacosmo_edgar_08_640.webp 640w, assets/img/salacosmo_edgar_08_1024.webp 1024w, assets/img/salacosmo_edgar_08_1920.webp 1920w"
+                                    alt="Cosmologia Art 8" class="hero-slide-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/salacosmo_edgar_16_1920.webp"
+                                    srcset="assets/img/salacosmo_edgar_16_640.webp 640w, assets/img/salacosmo_edgar_16_1024.webp 1024w, assets/img/salacosmo_edgar_16_1920.webp 1920w"
+                                    alt="Cosmologia Art 16" class="hero-slide-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/salacosmo_edgar_20_1920.webp"
+                                    srcset="assets/img/salacosmo_edgar_20_640.webp 640w, assets/img/salacosmo_edgar_20_1024.webp 1024w, assets/img/salacosmo_edgar_20_1920.webp 1920w"
+                                    alt="Cosmologia Art 20" class="hero-slide-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/salacosmo_edgar_24_1920.webp"
+                                    srcset="assets/img/salacosmo_edgar_24_640.webp 640w, assets/img/salacosmo_edgar_24_1024.webp 1024w, assets/img/salacosmo_edgar_24_1920.webp 1920w"
+                                    alt="Cosmologia Art 24" class="hero-slide-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/salacosmo_edgar_26_1920.webp"
+                                    srcset="assets/img/salacosmo_edgar_26_640.webp 640w, assets/img/salacosmo_edgar_26_1024.webp 1024w, assets/img/salacosmo_edgar_26_1920.webp 1920w"
+                                    alt="Cosmologia Art 26" class="hero-slide-img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/salacosmo_edgar_29_1920.webp"
+                                    srcset="assets/img/salacosmo_edgar_29_640.webp 640w, assets/img/salacosmo_edgar_29_1024.webp 1024w, assets/img/salacosmo_edgar_29_1920.webp 1920w"
+                                    alt="Cosmologia Art 29" class="hero-slide-img">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ARTIST TEXT SECTION -->
+        <section class="nucleo-text-section">
+            <div class="nucleo-text-container">
+                <p class="artist-quote">"Antigamente muitas pessoas eram conhecidas por virar toco, animais, folhas e
+                    então se dizia que essa capacidade é uma “ciência”, um conhecimento dos antigos. Ver esse “outro
+                    mundo” é coisa de gente preparada e que tem “ciência” como os pajés. Ver esse “outro lado” sem os
+                    devidos cuidados e a preparação necessária pode levar a uma série de “alucinações” e até mesmo a um
+                    estado de loucura. Na aldeia a gente não aprende a lidar com a roça sem lidar com a “ciência” das
+                    plantas, dos bichos, dos tempos."</p>
+                <p class="artist-name">Edgar Kanaykõ Xakriabá</p>
+                <!-- Separator line removed as per artist name instead? User asked to "add the artist name below the text". Kept separator line in CSS but HTML structure uses <p>. -->
+            </div>
+        </section>
+
+        <!-- GALLERY SECTION (Vistas da exposição) -->
+        <section class="nucleo-gallery-section">
+            <h2 class="nucleo-gallery-title">Vistas da exposição</h2>
+            <div class="nucleo-gallery-grid">
+                <!-- Expo Images (salacosmo_expo_*) -->
+                <a href="assets/img/salacosmo_expo_25102025_0081_1920.webp" class="glightbox gallery-item"
+                    data-gallery="expo-gallery">
+                    <img src="assets/img/salacosmo_expo_25102025_0081_640.webp" alt="Vista da exposição 1">
+                </a>
+                <a href="assets/img/salacosmo_expo_25102025_0087_1920.webp" class="glightbox gallery-item"
+                    data-gallery="expo-gallery">
+                    <img src="assets/img/salacosmo_expo_25102025_0087_640.webp" alt="Vista da exposição 2">
+                </a>
+                <a href="assets/img/salacosmo_expo_25102025_0088_1920.webp" class="glightbox gallery-item"
+                    data-gallery="expo-gallery">
+                    <img src="assets/img/salacosmo_expo_25102025_0088_640.webp" alt="Vista da exposição 3">
+                </a>
+                <a href="assets/img/salacosmo_expo_25102025_0103_1920.webp" class="glightbox gallery-item"
+                    data-gallery="expo-gallery">
+                    <img src="assets/img/salacosmo_expo_25102025_0103_640.webp" alt="Vista da exposição 4">
+                </a>
+                <a href="assets/img/salacosmo_expo_25102025_0132_1920.webp" class="glightbox gallery-item"
+                    data-gallery="expo-gallery">
+                    <img src="assets/img/salacosmo_expo_25102025_0132_640.webp" alt="Vista da exposição 5">
+                </a>
+                <a href="assets/img/salacosmo_expo_25102025_0159_1920.webp" class="glightbox gallery-item"
+                    data-gallery="expo-gallery">
+                    <img src="assets/img/salacosmo_expo_25102025_0159_640.webp" alt="Vista da exposição 6">
+                </a>
+                <a href="assets/img/salacosmo_expo_25102025_0172_1920.webp" class="glightbox gallery-item"
+                    data-gallery="expo-gallery">
+                    <img src="assets/img/salacosmo_expo_25102025_0172_640.webp" alt="Vista da exposição 7">
+                </a>
+                <a href="assets/img/salacosmo_expo_25102025_0175_1920.webp" class="glightbox gallery-item"
+                    data-gallery="expo-gallery">
+                    <img src="assets/img/salacosmo_expo_25102025_0175_640.webp" alt="Vista da exposição 8">
+                </a>
+                <a href="assets/img/salacosmo_expo_25102025_0178_1920.webp" class="glightbox gallery-item"
+                    data-gallery="expo-gallery">
+                    <img src="assets/img/salacosmo_expo_25102025_0178_640.webp" alt="Vista da exposição 9">
+                </a>
+                <a href="assets/img/salacosmo_expo_25102025_0184_1920.webp" class="glightbox gallery-item"
+                    data-gallery="expo-gallery">
+                    <img src="assets/img/salacosmo_expo_25102025_0184_640.webp" alt="Vista da exposição 10">
+                </a>
+                <a href="assets/img/salacosmo_expo_25102025_0190_1920.webp" class="glightbox gallery-item"
+                    data-gallery="expo-gallery">
+                    <img src="assets/img/salacosmo_expo_25102025_0190_640.webp" alt="Vista da exposição 11">
+                </a>
+                <a href="assets/img/salacosmo_expo_25102025_0193_1920.webp" class="glightbox gallery-item"
+                    data-gallery="expo-gallery">
+                    <img src="assets/img/salacosmo_expo_25102025_0193_640.webp" alt="Vista da exposição 12">
+                </a>
+                <a href="assets/img/salacosmo_expo_25102025_0197_1920.webp" class="glightbox gallery-item"
+                    data-gallery="expo-gallery">
+                    <img src="assets/img/salacosmo_expo_25102025_0197_640.webp" alt="Vista da exposição 13">
+                </a>
+                <a href="assets/img/salacosmo_expo_25102025_0200_1920.webp" class="glightbox gallery-item"
+                    data-gallery="expo-gallery">
+                    <img src="assets/img/salacosmo_expo_25102025_0200_640.webp" alt="Vista da exposição 14">
+                </a>
+            </div>
+        </section>
+
+        <!-- LOGOS SECTION -->
+        <section class="logos-section">
+            <img src="assets/img/logos/ReguadeLogos_PeB.png" alt="Logos dos parceiros e realizadores" class="logos-img">
+        </section>
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+
+    <!-- VLibras Widget -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>

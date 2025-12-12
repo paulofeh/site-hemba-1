@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hêmba - Edgar Kanaykõ Xakriabá</title>
+    <meta name="description"
+        content="Exposição virtual Hêmba de Edgar Kanaykõ Xakriabá. Curadoria de Eder Chiodetto e Fabiana Bruno.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Mulish:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <a href="index.html" class="brand-link">
+            <img src="assets/img/logos/Titulo_HEMBA_Preto.png" alt="Hêmba" class="header-logo">
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="desktop-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="apresentacao.html" class="nav-link">Apresentação</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link">Núcleos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="nucleo-cosmologia.html">Cosmologia</a></li>
+                        <li><a href="nucleo-territorio.html">Território</a></li>
+                        <li><a href="nucleo-resistencia.html">Resistência</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="curadoria.html" class="nav-link">Texto Curatorial</a></li>
+                <li class="nav-item"><a href="ficha-tecnica.html" class="nav-link">Ficha Técnica</a></li>
+            </ul>
+        </nav>
+
+        <!-- Burger Menu Button -->
+        <div class="burger-menu" aria-label="Menu Mobile">
+            <span class="burger-bar"></span>
+            <span class="burger-bar"></span>
+            <span class="burger-bar"></span>
+        </div>
+    </header>
+
+    <!-- Mobile Overlay Navigation -->
+    <div class="mobile-overlay">
+        <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="apresentacao.html" class="mobile-nav-link">Apresentação</a></li>
+
+            <!-- Mobile Accordion Item -->
+            <li class="mobile-accordion-item">
+                <div class="accordion-header mobile-nav-link">
+                    Núcleos
+                    <span class="accordion-icon">+</span>
+                </div>
+                <ul class="accordion-content">
+                    <li><a href="nucleo-cosmologia.html" class="mobile-sub-link">Cosmologia</a></li>
+                    <li><a href="nucleo-territorio.html" class="mobile-sub-link">Território</a></li>
+                    <li><a href="nucleo-resistencia.html" class="mobile-sub-link">Resistência</a></li>
+                </ul>
+            </li>
+
+            <li><a href="curadoria.html" class="mobile-nav-link">Texto Curatorial</a></li>
+            <li><a href="ficha-tecnica.html" class="mobile-nav-link">Ficha Técnica</a></li>
+        </ul>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <!-- Column 1: Title -->
+                <div class="hero-col hero-col-title">
+                    <img src="assets/img/logos/Titulo_HEMBA_Preto.png" alt="Hêmba" class="hero-title-img">
+                </div>
+
+                <!-- Column 2: Artist & Curator -->
+                <div class="hero-col hero-col-info">
+                    <img src="assets/img/logos/Nome_EDGAR_Preto.png" alt="Edgar Kanaykõ Xakriabá"
+                        class="hero-artist-img">
+
+                    <div class="hero-curatorship">
+                        <p>Curadoria de</p>
+                        <p><strong>Eder Chiodetto e Fabiana Bruno</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUOTE SECTION -->
+        <section class="quote-section">
+            <div class="quote-container">
+                <blockquote class="quote-text" id="quote-text">
+                    “Hêwa tô Tkai nã tet kpēzanī. Watktmã Ropibui psê kuwaba, Dat Wa tar Wa tô dure wa Hêmba.”
+                </blockquote>
+                <p class="quote-author" id="quote-author">– Sekwa Vicente Xakriabá, 2019</p>
+                <button class="quote-translate-btn" id="quote-translate-btn">Mudar idioma</button>
+            </div>
+        </section>
+
+        <!-- NUCLEOS SECTION -->
+        <section class="nucleos-section">
+            <div class="nucleo-col" style="background-image: url('assets/img/salacosmo_edgar_01_a_1024.webp');">
+                <div class="nucleo-overlay">
+                    <h2 class="nucleo-title">Cosmologia</h2>
+                    <a href="nucleo-cosmologia.html" class="nucleo-btn">Ver Núcleo</a>
+                </div>
+            </div>
+            <div class="nucleo-col" style="background-image: url('assets/img/salaterri_edgar_02_a.jpg_1024.webp');">
+                <div class="nucleo-overlay">
+                    <h2 class="nucleo-title">Território</h2>
+                    <a href="nucleo-territorio.html" class="nucleo-btn">Ver Núcleo</a>
+                </div>
+            </div>
+            <div class="nucleo-col" style="background-image: url('assets/img/salaresist_edgar_06_1024.webp');">
+                <div class="nucleo-overlay">
+                    <h2 class="nucleo-title">Resistência</h2>
+                    <a href="nucleo-resistencia.html" class="nucleo-btn">Ver Núcleo</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOGOS SECTION -->
+        <section class="logos-section">
+            <img src="assets/img/logos/ReguadeLogos_PeB.png" alt="Logos dos parceiros e realizadores" class="logos-img">
+        </section>
+    </main>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+
+    <!-- VLibras Widget -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>
