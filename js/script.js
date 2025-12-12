@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const txtPt = '“O céu respira a terra. Temos que ter cuidado, pois uma foto é uma imagem.”';
     const authPt = '– Pajé Vicente Xakriabá, 2019';
 
-    let isPortuguese = false;
+    let isPortuguese = true; // Default is now PT
 
     if (translateBtn && quoteText && quoteAuthor) {
         translateBtn.addEventListener('click', () => {
@@ -93,16 +93,16 @@ document.addEventListener('DOMContentLoaded', () => {
             quoteAuthor.classList.add('opacity-0');
 
             setTimeout(() => {
-                if (!isPortuguese) {
-                    // Switch to PT
-                    quoteText.textContent = txtPt;
-                    quoteAuthor.textContent = authPt;
-                    isPortuguese = true;
-                } else {
-                    // Switch back to Indigenous
+                if (isPortuguese) {
+                    // Switch to Indigenous
                     quoteText.textContent = txtIndigenous;
                     quoteAuthor.textContent = authIndigenous;
                     isPortuguese = false;
+                } else {
+                    // Switch back to PT
+                    quoteText.textContent = txtPt;
+                    quoteAuthor.textContent = authPt;
+                    isPortuguese = true;
                 }
 
                 // Fade In
