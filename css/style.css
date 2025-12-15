@@ -369,6 +369,22 @@ ul {
     padding-top: var(--header-height);
 }
 
+.hero-bg-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    min-height: 30vh;
+    /* Minimum height for mobile visibility */
+    object-fit: cover;
+    /* prevents distortion if min-height changes aspect ratio */
+    object-position: top center;
+    /* keeps top aligned and centers horizontally */
+    z-index: 1;
+    pointer-events: none;
+}
+
 .hero-content {
     display: grid;
     grid-template-columns: 1fr;
@@ -445,13 +461,15 @@ ul {
 
 /* QUOTE SECTION */
 .quote-section {
-    height: 70vh;
+    min-height: 70vh;
+    /* Changed from height to min-height */
     /* As requested */
     background-color: var(--secondary-ochre);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 10%;
+    padding: 4rem 10%;
+    /* Added vertical padding for safety */
 }
 
 .quote-container {
@@ -609,6 +627,18 @@ ul {
     }
 }
 
+.apresentacao-section {
+    position: relative;
+    /* Ensure positioning context for absolute bg */
+}
+
+.text-page-pattern {
+    opacity: 0.1;
+    /* Very light gray effect */
+    mix-blend-mode: multiply;
+    /* Optional: helps blend with white bg */
+}
+
 /* ACCESSIBILITY SECTION */
 .accessibility-section {
     padding: 3rem 10% 0 10%;
@@ -682,12 +712,22 @@ footer {
 }
 
 .apresentacao-container {
-    max-width: 1400px;
+    max-width: 1200px;
+    width: 90%;
     margin: 0 auto;
-    padding: 0 5%;
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 3rem;
+    grid-template-columns: 2fr 1fr;
+    /* Narrower text column */
+    gap: 4rem;
+    position: relative;
+    /* Ensure content is above bg pattern */
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+    .apresentacao-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 .apresentacao-title {
@@ -858,6 +898,13 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    /* Context for bg pattern */
+}
+
+.nucleo-hero .hero-bg-pattern {
+    opacity: 0.4;
+    /* Reduced opacity for better title readability */
 }
 
 .nucleo-hero-content {
@@ -866,6 +913,9 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    position: relative;
+    /* Ensure content is above bg pattern */
+    z-index: 2;
 }
 
 .nucleo-hero .nucleo-title {
